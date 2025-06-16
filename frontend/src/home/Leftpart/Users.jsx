@@ -1,4 +1,5 @@
 import React from 'react'
+import User from './User'
 
 function Users() {
   return (
@@ -6,17 +7,26 @@ function Users() {
     <h1 className="px-8 py-2 mt-8 text-white font-semibold bg-slate-800 rounded-md">
       Messaging
     </h1>
-  
-    {/* Avatar with online indicator */}
-    <div className="avatar online mt-4">
-      <div className="w-24 rounded-full overflow-hidden">
-        <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
-      </div>
+    <div className=" py-2 overflow-y-auto" style={{ maxHeight:"calc(82vh - 10vh)" }}>
+      <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
+       <User/>
     </div>
   </div>
   
   
   )
 }
+
 
 export default Users
